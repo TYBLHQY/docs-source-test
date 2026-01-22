@@ -7,8 +7,6 @@ on:
 jobs:
   notify:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
     steps:
       - name: Notify Repo B
         uses: peter-evans/repository-dispatch@v4
