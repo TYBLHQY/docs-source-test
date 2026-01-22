@@ -31,7 +31,6 @@ const { theme, page, frontmatter } = useData()
 import { useData } from 'vitepress'
 
 const { site, theme, page, frontmatter } = useData()
-
 </script>
 
 ## Results
