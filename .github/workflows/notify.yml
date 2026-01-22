@@ -1,0 +1,17 @@
+name: Notify site repo
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Notify Repo B
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.B_REPO_TOKEN }}
+          repository: TYBLHQY/site-build-test
+          event-type: docs-updated
+
